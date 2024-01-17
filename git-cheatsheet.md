@@ -11,6 +11,7 @@
 | `git merge --abort` | Aborts an ongoing merge operation and returns the repository to its pre-merge state. | `git merge --abort` |
 | `git merge --no-ff <feature_branch_name>` | Merges changes from a feature branch into the current branch, preserving a non-fast-forward merge. | `git merge --no-ff feature-branch` |
 | `git merge --squash <feature_branch_name> && git commit -m ""` | Merges changes from a feature branch into the current branch and squashes all commits into one, followed by a commit with a message. | `git merge --squash feature-branch && git commit -m "Merged feature XYZ"` |
+| `git commit -am "<commit_message>"` | This is a shortcut that allows you to stage all modified files and commit them with a single command. | `git commit -am "Fix typos in README"` |
 | `git merge <feature_branch_name>` | Merges changes from a feature branch into the current branch. | `git merge feature-branch` |
 | `git show <tag_name>` | Displays information about a specific tag, showing the tag's associated commit and its details. | `git show v1.0.0` |
 | `git cherry-pick <commit_sha>` | Applies the changes introduced by a specific commit to the current branch. | `git cherry-pick abc123` |
