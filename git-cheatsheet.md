@@ -38,7 +38,7 @@
 | `git branch --no-merged` | Lists branches that have not been merged into the current branch. Helpful for identifying branches that may still have changes to be integrated. | `git branch --no-merged` |
 | `git branch -r` | Lists remote branches in the Git repository. | `git branch -r` |
 | `git branch --track <local_branch> <remote>/<remote_branch>` | Sets up the local branch to track the remote branch `<remote_branch>` from the remote repository named `<remote>`.  | `git branch --track feature-branch origin/feature-branch` |
-| `git branch --set-upstream-to=origin/<remote_branch> <local_branch>` | Sets the upstream branch for the local branch named "main" to "origin/main." The upstream branch is the remote branch that your local branch is tracking. It helps Git understand where to push and pull changes. | `git branch --set-upstream-to=origin/main main` |
+| `git branch --set-upstream-to=origin/<remote_branch> <local_branch>` | Sets the upstream branch for the local branch named "<local_branch>" to "origin/<remote_branch>." The upstream branch is the remote branch that your local branch is tracking. It helps Git understand where to push and pull changes. | `git branch --set-upstream-to=origin/main main` |
 | `git branch -vv` | Provides details about the upstream branches that the local branches are tracking. | `git branch -vv` |
 | `git remote show origin` | Shows information such as the URL of the remote repository, the branches present on the remote, and the local branches that are configured to track branches on the remote. | `git remote show origin` |
 | `git push origin --delete <branch_name>` | The --delete option indicates that you want to delete the specified branch on the remote. | `git push origin --delete feature-branch` |
