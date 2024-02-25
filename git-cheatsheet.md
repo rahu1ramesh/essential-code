@@ -1,6 +1,8 @@
 | Command | Explanation | Example Use Case |
 | ------- | ----------- | ---------------- |
 | `git clone <required_repo>` | Clones the specified repository, creating a local copy on your machine. | `git clone https://github.com/example/repository.git` |
+| `git clone -b <branch_name> <required_repo>` | Clones a specific branch from the remote repository. | `git clone -b 5.6.1 https://github.com/example/repository.git` |
+| `git clone --depth <depth> <required_repo>` | Clones a repository with limited history, specifying the number of commits to include in the clone. | `git clone --depth 1 https://github.com/example/repository.git` |
 | `git pull --rebase` | Updates your local repository with the latest changes from the remote repository. The `--rebase` option ensures local changes are applied on top of remote changes. | `git pull --rebase origin master` |
 | `git tag -a 1.0.0 -m "bahmni-lite Release version 1.0.0"` | Creates a new annotated tag named "1.0.0" with a descriptive message. Annotated tags include additional metadata like tagger's name, email, and creation date. | `git tag -a 1.0.0 -m "bahmni-lite Release version 1.0.0"` |
 | `git push origin 1.0.0` | Pushes the newly created or updated tag "1.0.0" to the remote repository named "origin", making it available to others. | `git push origin 1.0.0` |
